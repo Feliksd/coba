@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+/*Background*/
+body {
+  background: linear-gradient(#8d47ff, black);
+  width: 100%;
+  min-height: 100vh;
+}
+/*navbar*/
+nav {
+  background-color: #8d47ff;
+  padding: 10px;
+  box-shadow: 0px 0px 5px black;
+}
+nav .logo {
+  display: flex;
+  justify-content: center;
+}
+nav .logo img {
+  width: 10%;
+}
+/*Bagian kiri*/
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+.container {
+  width: 100%;
+  display: flex;
+  max-width: 850px;
+  background-color: transparent;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+.login {
+  width: 400px;
+}
+form {
+  width: 250px;
+  margin: 60px auto;
+}
+form .img {
+  display: flex;
+  justify-content: center;
+}
+.img img {
+  width: 30%;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  margin: 20px;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+hr {
+  border-top: 2px solid gray;
+}
+p {
+  text-align: center;
+  margin: 10px;
+}
+.right img {
+  width: 350px;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+.email {
+  padding-bottom: 10px;
+}
+.email input {
+  color: whitesmoke;
+}
+.pass {
+  padding-bottom: 10px;
+}
+.pass input {
+  color: whitesmoke;
+}
+form a {
+  position: absolute;
+  right: 0;
+  color: #adadad;
+  font-size: 10px;
+}
+form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px;
+}
+input {
+  width: 100%;
+  margin: 2px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: transparent;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: 252px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background-color: #8d47ff;
+  color: white;
+  transition: 0.3s;
+}
+button img {
+  width: 15px;
+  position: relative;
+  top: 3px;
+}
+button:hover {
+  background-color: blueviolet;
+  transition: 0.3s;
+}
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  /* Reduce the size of the logo */
+  nav .logo img {
+    width: 20%;
+  }
+
+  /* Reduce the width of the form */
+  form {
+    width: 200px;
+    margin: 30px auto;
+  }
+
+  /* Reduce the size of the profile picture */
+  form .img img {
+    width: 20%;
+  }
+
+  /* Adjust the width of the container */
+  .container {
+    max-width: 600px;
+  }
+
+  /* Adjust the width of the right column */
+  .right img {
+    width: 250px;
+  }
+
+  /* Adjust the font size of the button */
+  button {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px){
+  .right img {
+    display: none;
+  }
+}
