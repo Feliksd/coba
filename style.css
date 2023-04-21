@@ -157,16 +157,12 @@ button:hover {
   /* Adjust the width of the right column */
   .right img {
     width: 250px;
+    display: none;
   }
 
   /* Adjust the font size of the button */
   button {
     width: 100%;
     font-size: 12px;
-  }
-}
-@media (max-width: 520px){
-  .right img {
-    display: none;
   }
 }
